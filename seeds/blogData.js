@@ -1,24 +1,21 @@
-const { Blog } = require("../models");
 
 const postData = [
   {
-    title: "Lorem Ipsum I",
-    content:
+    name: "Lorem Ipsum I",
+    description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     user_id: 1,
   },
   {
-    title: "Lorem Ipsum II",
-    content: "Amet aliquam id diam maecenas ultricies mi eget mauris pharetra.",
+    name: "Lorem Ipsum II",
+    description: "Amet aliquam id diam maecenas ultricies mi eget mauris pharetra.",
     user_id: 2,
   },
   {
-    title: "Lorem Ipsum III",
-    content: "Ut etiam sit amet nisl purus in mollis.",
+    name: "Lorem Ipsum III",
+    description: "Ut etiam sit amet nisl purus in mollis.",
     user_id: 3,
   },
 ];
 
-const seedPosts = () => Post.bulkCreate(postData);
-
-module.exports = seedPosts;
+module.exports = postData;

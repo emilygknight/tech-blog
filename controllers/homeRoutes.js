@@ -5,11 +5,10 @@ const sequelize = require('../config/connection');
 
 router.get("/", (req, res) => {
   Blog.findAll({
-    attributes: ["id", "title", "content", "created_at"],
     include: [
       {
         model: User,
-        attributes: ["username"],
+        attributes: ["name"],
       },
     ],
   })
